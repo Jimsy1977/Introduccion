@@ -5,6 +5,8 @@ import environ
 env= environ.Env()
 environ.Env.read_env()
 
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -32,7 +34,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'core',
+    'blog',
+
+    'tailwind',
+    'theme'
+    
 ]
+
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
