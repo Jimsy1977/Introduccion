@@ -5,7 +5,7 @@ import environ
 env= environ.Env()
 environ.Env.read_env()
 
-NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,6 +46,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
